@@ -1,0 +1,31 @@
+
+.middlePage {
+width: 780px;
+    height: 500px;
+    position: absolute;
+    top: 30;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.spacing {
+	padding-top:7px;
+	padding-bottom:7px; 
+}
+.main{
+    background: url('backGround.jpg') repeat fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    
+}
+.form-container{
+    
+    margin-top: 20vh;
+    margin-bottom: 100vh;
+    
+}
