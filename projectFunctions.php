@@ -16,13 +16,13 @@ ob_start(); // start of outer buffer function
 
 if(isset($_POST['sbmt']))
 {
-    ob_end_clean(); //clean previous displayed echoed
+    ob_end_clean();
     
-    loginvalidate($_POST['CSR'],$_COOKIE['session_id'],$_POST['user_name'],$_POST['user_pswd']);// Login Validation
+    loginvalidate($_POST['CSR'],$_COOKIE['session_id'],$_POST['user_name'],$_POST['user_pswd']);
 }
 
 
-//function to validate Login
+
 function loginvalidate($user_CSRF,$user_sessionID, $username, $password)
 {
     if($username=="Admin" && $password=="Admin" && $user_sessionID===session_id() && $user_CSRF==$_SESSION['CSRF'])

@@ -76,7 +76,7 @@
         </div>
         
         <?php 
-          //if cookie is ok, request to the server and get CSRF token & store it inside hidden HTML DOM input tag ~ id=csToken
+
          if(isset($_COOKIE['session_id']))
          { 
              echo ' <script type="text/javascript" src="configuration.js"> loadDOC("POST","projectFunctions.php","csToken")  </script> ';   
